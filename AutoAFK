@@ -100,9 +100,11 @@ function fstrain()
 		game.Players.LocalPlayer.Character.Humanoid.Jump = true
 	end
 end
+
 function pptrain()
 	game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack.PPTool)
 end
+
 function train()
 	task.wait()
 	while _G.main == true do
@@ -136,15 +138,19 @@ function train()
 		game.Players.LocalPlayer.Character.Humanoid.Jump = true
 	end
 end
+
 fs = Vector3.new(2788.16, 21223.7, -2936.21)
 bt = Vector3.new(1817.6, 57.769649505615234, 798.5)
 pp = Vector3.new(461, 1009, -843)
+lb = Vector3.new(50, 30, -273)
+
 if game.PlaceId == 11312500614 and game.JobId == "386659af-5245-366f-761a-9691b71e8d50" then
 	local Playero = game.Players.LocalPlayer
 	local rsp = game:GetService("ReplicatedStorage").RespawnEvent
 	print("AutoAfk in process...")
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Auto%20Walk%20Obfuscator'))()
 	_G.main = true
+	
 	if Playero.Name == "Jayplayp" then
 		print("Jayka")
 		rsp:FireServer()
@@ -161,10 +167,6 @@ if game.PlaceId == 11312500614 and game.JobId == "386659af-5245-366f-761a-9691b7
 		game:GetService("ReplicatedStorage").WeightEvent:FireServer(ohString1)
 		wait(1)
 		poop()
-		while _G.main do
-			task.wait()
-			game.Players.LocalPlayer.Character.Humanoid.Jump = true
-		end
 	end
 
 	if Playero.Name == "BanNaxyuBlyat" then
@@ -183,6 +185,7 @@ if game.PlaceId == 11312500614 and game.JobId == "386659af-5245-366f-761a-9691b7
 		poop()
 		fstrain()
 	end
+	
 	if Playero.Name == "SPEEDISMYLIFEDUDE" then
 		print("TheFastestHuman")
 		wait(3)
@@ -205,6 +208,20 @@ if game.PlaceId == 11312500614 and game.JobId == "386659af-5245-366f-761a-9691b7
 			game.Players.LocalPlayer.Character.Humanoid.Jump = true
 		end
 	end
+	
+	if Playero.Name == "TheRichestHuman_Bro" or "KnightOfMiracle" then
+		print("Rich")
+		wait()
+		rsp:FireServer()
+		wait(3)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(lb)
+		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
+		game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
+		wait(1)
+		freeze()
+		poop()
+	end
+	
 	if Playero.Name == "Miskaur_3" then
 		print("Miska")
 		wait(3)
