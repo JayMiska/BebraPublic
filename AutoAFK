@@ -1,1 +1,226 @@
-сюда
+wait(10)
+function poop()
+	local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
+	local g = game
+	local w = g.Workspace
+	local l = g.Lighting
+	local t = w.Terrain
+	sethiddenproperty(l,"Technology",2)
+	sethiddenproperty(t,"Decoration",false)
+	t.WaterWaveSize = 0
+	t.WaterWaveSpeed = 0
+	t.WaterReflectance = 0
+	t.WaterTransparency = 0
+	l.GlobalShadows = 0
+	l.FogEnd = 9e9
+	l.Brightness = 0
+	settings().Rendering.QualityLevel = "Level01"
+	for i, v in pairs(w:GetDescendants()) do
+		if v:IsA("BasePart") and not v:IsA("MeshPart") then
+			v.Material = "Plastic"
+			v.Reflectance = 0
+		elseif (v:IsA("Decal") or v:IsA("Texture")) and decalsyeeted then
+			v.Transparency = 1
+		elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+			v.Lifetime = NumberRange.new(0)
+		elseif v:IsA("Explosion") then
+			v.BlastPressure = 1
+			v.BlastRadius = 1
+		elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
+			v.Enabled = false
+		elseif v:IsA("MeshPart") and decalsyeeted then
+			v.Material = "Plastic"
+			v.Reflectance = 0
+			v.TextureID = 10385902758728957
+		elseif v:IsA("SpecialMesh") and decalsyeeted  then
+			v.TextureId=0
+		elseif v:IsA("ShirtGraphic") and decalsyeeted then
+			v.Graphic=0
+		elseif (v:IsA("Shirt") or v:IsA("Pants")) and decalsyeeted then
+			v[v.ClassName.."Template"]=0
+		end
+	end
+	for i = 1,#l:GetChildren() do
+		e=l:GetChildren()[i]
+		if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+			e.Enabled = false
+		end
+	end
+	w.DescendantAdded:Connect(function(v)
+		wait()--prevent errors and shit
+		if v:IsA("BasePart") and not v:IsA("MeshPart") then
+			v.Material = "Plastic"
+			v.Reflectance = 0
+		elseif v:IsA("Decal") or v:IsA("Texture") and decalsyeeted then
+			v.Transparency = 1
+		elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+			v.Lifetime = NumberRange.new(0)
+		elseif v:IsA("Explosion") then
+			v.BlastPressure = 1
+			v.BlastRadius = 1
+		elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
+			v.Enabled = false
+		elseif v:IsA("MeshPart") and decalsyeeted then
+			v.Material = "Plastic"
+			v.Reflectance = 0
+			v.TextureID = 10385902758728957
+		elseif v:IsA("SpecialMesh") and decalsyeeted then
+			v.TextureId=0
+		elseif v:IsA("ShirtGraphic") and decalsyeeted then
+			v.ShirtGraphic=0
+		elseif (v:IsA("Shirt") or v:IsA("Pants")) and decalsyeeted then
+			v[v.ClassName.."Template"]=0
+		end
+	end)
+	setfpscap(30)
+end
+
+function freeze()
+	for i,x in pairs(game.Players.LocalPlayer.Character.Humanoid.Parent:GetDescendants()) do
+		if x:IsA("BasePart") and not x.Anchored then
+			x.Anchored = true
+		end
+	end
+end
+function fstrain()
+	while _G.main == true do
+		task.wait()
+		pcall(function()
+			for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+				if v.Name == "FSTool" then
+					v.Parent = game.Players.LocalPlayer.Character
+				end
+			end
+		end)
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v:IsA("Tool") then
+				v:Activate()
+			end
+		end
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end
+end
+function pptrain()
+	game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack.PPTool)
+end
+function train()
+	task.wait()
+	while _G.main == true do
+		task.wait()
+		pcall(function()
+			for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+				if v.Name == "FSTool" then
+					v.Parent = game.Players.LocalPlayer.Character
+				end
+			end
+		end)
+		pcall(function()
+			for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+				if v.Name == "BTTool" then
+					v.Parent = game.Players.LocalPlayer.Character
+				end
+			end
+		end)
+		pcall(function()
+			for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+				if v.Name == "PPTool" then
+					v.Parent = game.Players.LocalPlayer.Character
+				end
+			end
+		end)
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v:IsA("Tool") then
+				v:Activate()
+			end
+		end
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end
+end
+fs = Vector3.new(2788.16, 21223.7, -2936.21)
+bt = Vector3.new(1817.6, 57.769649505615234, 798.5)
+pp = Vector3.new(461, 1009, -843)
+if game.PlaceId == 11312500614 and game.JobId == "386659af-5245-366f-761a-9691b71e8d50" then
+	local Playero = game.Players.LocalPlayer
+	local rsp = game:GetService("ReplicatedStorage").RespawnEvent
+	print("AutoAfk in process...")
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Auto%20Walk%20Obfuscator'))()
+	_G.main = true
+	if Playero.Name == "Jayplayp" then
+		print("Jayka")
+		rsp:FireServer()
+		wait(2)
+		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
+		game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
+		wait(1)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(bt)
+		train()
+		wait(1)
+		freeze()
+		game:GetService("ReplicatedStorage").Run:FireServer()
+		local ohString1 = "7"
+		game:GetService("ReplicatedStorage").WeightEvent:FireServer(ohString1)
+		wait(1)
+		poop()
+		while _G.main do
+			task.wait()
+			game.Players.LocalPlayer.Character.Humanoid.Jump = true
+		end
+	end
+
+	if Playero.Name == "BanNaxyuBlyat" then
+		print("bannaxyuALL")
+		rsp:FireServer()
+		wait(7)
+		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
+		game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
+		wait(2)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(fs)
+		wait(1)
+		freeze()
+		game:GetService("ReplicatedStorage").Run:FireServer()
+		local ohString1 = "6"
+		game:GetService("ReplicatedStorage").WeightEvent:FireServer(ohString1)
+		poop()
+		fstrain()
+	end
+	if Playero.Name == "SPEEDISMYLIFEDUDE" then
+		print("TheFastestHuman")
+		wait(3)
+		rsp:FireServer()
+		wait(3)
+		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
+		game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
+		wait(1)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(pp)
+		wait(1)
+		game:GetService("ReplicatedStorage").Run:FireServer()
+		local ohString1 = "12"
+		game:GetService("ReplicatedStorage").WeightEvent:FireServer(ohString1)
+		poop()
+		pptrain()
+		wait(1)
+		freeze()
+		while _G.main do
+			wait()
+			game.Players.LocalPlayer.Character.Humanoid.Jump = true
+		end
+	end
+	if Playero.Name == "Miskaur_3" then
+		print("Miska")
+		wait(3)
+		rsp:FireServer()
+		wait(3)
+		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
+		game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
+		wait(1)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(bt)
+		wait(1)
+		game:GetService("ReplicatedStorage").Run:FireServer()
+		local ohString1 = "7"
+		game:GetService("ReplicatedStorage").WeightEvent:FireServer(ohString1)
+		poop()
+		wait(1)
+		freeze()
+		train()
+	end
+end
