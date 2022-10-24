@@ -154,18 +154,18 @@ if game.PlaceId == 11312500614 and game.JobId == "386659af-5245-366f-761a-9691b7
 	if Playero.Name == "Jayplayp" then
 		print("Jayka")
 		rsp:FireServer()
-		wait(2)
+		wait(3)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
-		wait(1)
+		wait(2)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(bt)
 		train()
-		wait(1)
+		wait(2)
 		freeze()
 		game:GetService("ReplicatedStorage").Run:FireServer()
 		local ohString1 = "7"
 		game:GetService("ReplicatedStorage").WeightEvent:FireServer(ohString1)
-		wait(1)
+		wait(2)
 		poop()
 	end
 
