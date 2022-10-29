@@ -244,6 +244,6 @@ if game.PlaceId == 11312500614 and game.JobId == "d20393cc-b947-07cf-aef2-4cbeb7
 		poop()
 		wait(1)
 		freeze()
-		train()
+		
     end
 end
