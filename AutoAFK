@@ -1,4 +1,5 @@
 wait(10)
+local virtualUser = game:GetService('VirtualUser')
 function poop()
 	local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
 	local g = game
@@ -97,7 +98,6 @@ function fstrain()
 				v:Activate()
 			end
 		end
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
 	end
 end
 
@@ -135,7 +135,24 @@ function train()
 				v:Activate()
 			end
 		end
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end
+end
+function autows()
+	while _G.main == true do
+		virtualUser:CaptureController()
+		virtualUser:SetKeyDown('0x77')
+		task.wait(.1)
+		virtualUser:SetKeyUp('0x77')
+	end
+end
+function autojf()
+	while _G.main == true do
+		local virtualUser = game:GetService('VirtualUser')
+		virtualUser:CaptureController()
+
+		virtualUser:SetKeyDown('0x20')
+		task.wait(.1)
+		virtualUser:SetKeyUp('0x20')
 	end
 end
 
@@ -146,11 +163,10 @@ lb = Vector3.new(50, 30, -273)
 
 if game.PlaceId == 11312500614 and game.JobId == "d20393cc-b947-07cf-aef2-4cbeb71e8d50" then
 	local Playero = game.Players.LocalPlayer
-	local rsp = game:GetService("ReplicatedStorage").RespawnEvent
+	local rsp = game:GetService("ReplicatedStorage").RespawnEvent	
 	print("AutoAfk in process...")
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Auto%20Walk%20Obfuscator'))()
 	_G.main = true
-	
+
 	if Playero.Name == "Jayplayp" then
 		print("JayKa")
 		rsp:FireServer()
@@ -166,7 +182,8 @@ if game.PlaceId == 11312500614 and game.JobId == "d20393cc-b947-07cf-aef2-4cbeb7
 		game:GetService("ReplicatedStorage").WeightEvent:FireServer(ohString1)
 		poop()
 		fstrain()
-
+		spawn(autojf)
+		spawn(autows)
 	elseif Playero.Name == "BanNaxyuBlyat" then
 		print("bannaxyuALL")
 		rsp:FireServer()
@@ -182,7 +199,8 @@ if game.PlaceId == 11312500614 and game.JobId == "d20393cc-b947-07cf-aef2-4cbeb7
 		game:GetService("ReplicatedStorage").WeightEvent:FireServer(ohString2)
 		poop()
 		fstrain()
-	
+		spawn(autojf)
+		spawn(autows)
 	elseif Playero.Name == "SPEEDISMYLIFEDUDE" then
 		print("TheFastestHuman")
 		wait(3)
@@ -200,11 +218,9 @@ if game.PlaceId == 11312500614 and game.JobId == "d20393cc-b947-07cf-aef2-4cbeb7
 		pptrain()
 		wait(1)
 		freeze()
-		while _G.main do
-			wait()
-			game.Players.LocalPlayer.Character.Humanoid.Jump = true
-		end
-	
+		spawn(autojf)
+		spawn(autows)
+
 	elseif Playero.Name == "TheRichestHuman_Bro" then
 		print("Rich")
 		wait()
@@ -216,7 +232,7 @@ if game.PlaceId == 11312500614 and game.JobId == "d20393cc-b947-07cf-aef2-4cbeb7
 		wait(1)
 		freeze()
 		poop()
-		
+
 	elseif Playero.Name == "KnightOfMiracle" then
 		print("Knight")
 		wait()
@@ -227,7 +243,7 @@ if game.PlaceId == 11312500614 and game.JobId == "d20393cc-b947-07cf-aef2-4cbeb7
 		game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 		wait(1)
 		poop()
-	
+
 	elseif Playero.Name == "Miskaur_3" then
 		print("Miska")
 		wait(3)
@@ -244,6 +260,7 @@ if game.PlaceId == 11312500614 and game.JobId == "d20393cc-b947-07cf-aef2-4cbeb7
 		poop()
 		wait(1)
 		freeze()
-		
-    end
+		spawn(autojf)
+		spawn(autows)
+	end
 end
