@@ -170,20 +170,23 @@ if game.PlaceId == 11312500614 and game.JobId == "d20393cc-b947-07cf-aef2-4cbeb7
 	if Playero.Name == "Jayplayp" then
 		print("JayKa")
 		rsp:FireServer()
-		wait(7)
+		wait(4)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 		wait(2)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(fs)
 		wait(1)
 		freeze()
+		wait(1)
 		game:GetService("ReplicatedStorage").Run:FireServer()
 		local ohString1 = "8"
 		game:GetService("ReplicatedStorage").WeightEvent:FireServer(ohString1)
 		poop()
+		wait(2)
 		fstrain()
 		spawn(autojf)
 		spawn(autows)
+		
 	elseif Playero.Name == "BanNaxyuBlyat" then
 		print("bannaxyuALL")
 		rsp:FireServer()
@@ -201,6 +204,7 @@ if game.PlaceId == 11312500614 and game.JobId == "d20393cc-b947-07cf-aef2-4cbeb7
 		fstrain()
 		spawn(autojf)
 		spawn(autows)
+		
 	elseif Playero.Name == "SPEEDISMYLIFEDUDE" then
 		print("TheFastestHuman")
 		wait(3)
