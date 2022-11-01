@@ -266,4 +266,5 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 		spawn(autojf)
 		spawn(autows)
 	end
+else print'wrong game to auto afk'
 end
