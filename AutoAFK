@@ -172,7 +172,8 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 		rsp:FireServer()
 		wait(6)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
-		wait(2)
+		game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
+		wait(3)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(pp)
 		wait(1)
 		game:GetService("ReplicatedStorage").Run:FireServer()
