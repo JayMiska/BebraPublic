@@ -169,7 +169,7 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 
 	if Playero.Name == "Jayplayp" then
 		print("JayKa")
-		wait(3)
+		wait(10)
 		rsp:FireServer()
 		wait(3)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
