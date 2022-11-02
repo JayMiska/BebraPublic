@@ -171,7 +171,7 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 		print("JayKa")
 		wait(3)
 		rsp:FireServer()
-		wait(10)
+		wait(16)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 		wait(1)
