@@ -236,6 +236,7 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 		wait(1)
 		freeze()
 		poop()
+		setfpscap(5)
 
 	elseif Playero.Name == "KnightOfMiracle" then
 		print("Knight")
