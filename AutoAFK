@@ -190,7 +190,7 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 		print("bannaxyuALL")
 		wait(3)
 		rsp:FireServer()
-		wait(3)
+		wait(16)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 		wait(1)
@@ -228,9 +228,9 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 
 	elseif Playero.Name == "TheRichestHuman_Bro" then
 		print("Rich")
-		wait()
+		wait(3)
 		rsp:FireServer()
-		wait(5)
+		wait(16)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(lb)
 		--game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		wait(1)
@@ -252,7 +252,7 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 		print("Miska")
 		wait(3)
 		rsp:FireServer()
-		wait(3)
+		wait(16)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 		wait(1)
