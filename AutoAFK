@@ -73,7 +73,7 @@ function poop()
 			v[v.ClassName.."Template"]=0
 		end
 	end)
-	setfpscap(30)
+	setfpscap(10)
 end
 
 function freeze()
@@ -201,6 +201,7 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 		game:GetService("ReplicatedStorage").WeightEvent:FireServer(ohString2)
 		poop()
 		wait(1)
+		setfpscap(20)
 		fstrain()
 		freeze()
 		spawn(autojf)
@@ -232,7 +233,7 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 		rsp:FireServer()
 		wait(16)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(lb)
-		--game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
+		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		wait(1)
 		freeze()
 		poop()
@@ -248,6 +249,7 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 		wait(1)
 		poop()
 		setfpscap(5)
+		
 	elseif Playero.Name == "Miskaur_3" then
 		print("Miska")
 		wait(3)
