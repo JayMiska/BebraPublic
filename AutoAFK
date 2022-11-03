@@ -169,9 +169,8 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 
 	if Playero.Name == "Jayplayp" then
 		print("JayKa")
-		wait(3)
 		rsp:FireServer()
-		wait(16)
+		wait(8)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 		wait(1)
@@ -188,9 +187,8 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 		
 	elseif Playero.Name == "BanNaxyuBlyat" then
 		print("bannaxyuALL")
-		wait(3)
 		rsp:FireServer()
-		wait(16)
+		wait(8)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 		wait(1)
@@ -208,9 +206,8 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 		
 	elseif Playero.Name == "SPEEDISMYLIFEDUDE" then
 		print("TheFastestHuman")
-		wait(3)
 		rsp:FireServer()
-		wait(16)
+		wait(8)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 		wait(1)
@@ -228,9 +225,8 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 
 	elseif Playero.Name == "TheRichestHuman_Bro" then
 		print("Rich")
-		wait(3)
 		rsp:FireServer()
-		wait(16)
+		wait(8)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(lb)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		wait(1)
@@ -240,9 +236,8 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 
 	elseif Playero.Name == "KnightOfMiracle" then
 		print("Knight")
-		wait()
 		rsp:FireServer()
-		wait(5)
+		wait(8)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(lb)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
@@ -252,9 +247,8 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 		
 	elseif Playero.Name == "Miskaur_3" then
 		print("Miska")
-		wait(3)
 		rsp:FireServer()
-		wait(16)
+		wait(8)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 		wait(1)
