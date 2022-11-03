@@ -1,6 +1,6 @@
 wait(10)
 local virtualUser = game:GetService('VirtualUser')
-function poop()
+function poop(fps)
 	local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
 	local g = game
 	local w = g.Workspace
@@ -73,7 +73,7 @@ function poop()
 			v[v.ClassName.."Template"]=0
 		end
 	end)
-	setfpscap(29)
+	setfpscap(fps)
 end
 
 function freeze()
@@ -180,7 +180,7 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 		game:GetService("ReplicatedStorage").Run:FireServer()
 		local ohString1 = "8"
 		game:GetService("ReplicatedStorage").WeightEvent:FireServer(ohString1)
-		poop()
+		poop(30)
 		wait(2)
 		freeze()
 		pptrain()
@@ -199,7 +199,7 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 		game:GetService("ReplicatedStorage").Run:FireServer()
 		local ohString2 = "6"
 		game:GetService("ReplicatedStorage").WeightEvent:FireServer(ohString2)
-		poop()
+		poop(30)
 		wait(1)
 		fstrain()
 		freeze()
@@ -219,7 +219,7 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 		game:GetService("ReplicatedStorage").Run:FireServer()
 		local ohString3 = "8"
 		game:GetService("ReplicatedStorage").WeightEvent:FireServer(ohString3)
-		poop()
+		poop(30)
 		pptrain()
 		wait(1)
 		freeze()
@@ -235,7 +235,7 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		wait(1)
 		freeze()
-		poop()
+		poop(5)
 		setfpscap(5)
 
 	elseif Playero.Name == "KnightOfMiracle" then
@@ -247,7 +247,7 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 		wait(1)
-		poop()
+		poop(5)
 		setfpscap(5)
 		
 	elseif Playero.Name == "Miskaur_3" then
@@ -263,12 +263,11 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 		game:GetService("ReplicatedStorage").Run:FireServer()
 		local ohString4 = "7"
 		game:GetService("ReplicatedStorage").WeightEvent:FireServer(ohString4)
-		poop()
+		poop(15)
 		wait(1)
 		freeze()
 		spawn(autojf)
 		spawn(autows)
-		setfpscap(10)
 	end
 else print'wrong game to auto afk'
 end
