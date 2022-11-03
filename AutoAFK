@@ -1,4 +1,4 @@
-wait(10)
+repeat wait(1) until game:IsLoaded()
 local virtualUser = game:GetService('VirtualUser')
 function poop(fps)
 	local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
@@ -169,9 +169,9 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 
 	if Playero.Name == "Jayplayp" then
 		print("JayKa")
-		repeat wait(1) until game.IsLoaded() end
+		wait(3)
 		rsp:FireServer()
-		wait(10)
+		wait(16)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 		wait(1)
@@ -188,9 +188,9 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 		
 	elseif Playero.Name == "BanNaxyuBlyat" then
 		print("bannaxyuALL")
-		repeat wait(1) until game.IsLoaded()
+		wait(3)
 		rsp:FireServer()
-		wait(10)
+		wait(16)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 		wait(1)
@@ -208,9 +208,9 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 		
 	elseif Playero.Name == "SPEEDISMYLIFEDUDE" then
 		print("TheFastestHuman")
-		repeat wait(1) until game.IsLoaded()
+		wait(3)
 		rsp:FireServer()
-		wait(10)
+		wait(16)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 		wait(1)
@@ -228,11 +228,11 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 
 	elseif Playero.Name == "TheRichestHuman_Bro" then
 		print("Rich")
-		repeat wait(1) until game.IsLoaded()
+		wait(3)
 		rsp:FireServer()
-		wait(10)
+		wait(16)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(lb)
-		--game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
+		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		wait(1)
 		freeze()
 		poop(5)
@@ -240,9 +240,9 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 
 	elseif Playero.Name == "KnightOfMiracle" then
 		print("Knight")
-		repeat wait(1) until game.IsLoaded()
+		wait()
 		rsp:FireServer()
-		wait(10)
+		wait(5)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(lb)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
@@ -252,9 +252,9 @@ if game.PlaceId == 11312500614 and game.JobId == "5def3116-34fd-d14a-0b14-ed4ab7
 		
 	elseif Playero.Name == "Miskaur_3" then
 		print("Miska")
-		repeat wait(1) until game.IsLoaded()
+		wait(3)
 		rsp:FireServer()
-		wait(10)
+		wait(16)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 		wait(1)
