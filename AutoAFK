@@ -198,11 +198,11 @@ if game.PlaceId == 11312500614 and game.JobId == "623d3b95-a58e-a974-febd-461ab7
 		game:GetService("ReplicatedStorage").WeightEvent:FireServer(ohString2)
 		poop(30)
 		wait(1)
-		fstrain()
 		wait(1)
 		freeze()
 		spawn(autojf)
 		spawn(autows)
+		spawn(fstrain())
 		
 	elseif Playero.Name == "SPEEDISMYLIFEDUDE" then
 		print("TheFastestHuman")
