@@ -262,6 +262,7 @@ if game.PlaceId == 11312500614 and game.JobId == "3a934def-fe7d-e106-9211-0b26b7
 		freeze()
 		spawn(autojf)
 		spawn(autows)
+		spawn(fstrain())
 	end
 else print'wrong game to auto afk'
 end
