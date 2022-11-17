@@ -257,7 +257,7 @@ if game.PlaceId == 11312500614 and game.JobId == "3a934def-fe7d-e106-9211-0b26b7
 		game:GetService("ReplicatedStorage").Run:FireServer()
 		local ohString4 = "7"
 		game:GetService("ReplicatedStorage").WeightEvent:FireServer(ohString4)
-		poop(15)
+		poop(30)
 		wait(1)
 		freeze()
 		spawn(autojf)
