@@ -183,6 +183,7 @@ if game.PlaceId == 11312500614 and game.JobId == "3a934def-fe7d-e106-9211-0b26b7
 		wait(2)
 		freeze()
 		spawn(autows)
+		spawn(autojf)
 		
 	elseif Playero.Name == "BanNaxyuBlyat" then
 		print("bannaxyuALL")
