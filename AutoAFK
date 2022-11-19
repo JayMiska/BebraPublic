@@ -73,6 +73,7 @@ function poop(fps)
 			v[v.ClassName.."Template"]=0
 		end
 	end)
+	wait(1)
 	setfpscap(fps)
 end
 
@@ -179,7 +180,7 @@ if game.PlaceId == 11312500614 and game.JobId == "faddd4e5-6bf6-fa57-0b74-dddc6b
 		game:GetService("ReplicatedStorage").Run:FireServer()
 		local ohString1 = "8"
 		game:GetService("ReplicatedStorage").WeightEvent:FireServer(ohString1)
-		poop(30)
+		poop(10)
 		wait(2)
 		freeze()
 		spawn(autows)
