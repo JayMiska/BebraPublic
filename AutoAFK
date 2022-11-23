@@ -213,7 +213,7 @@ if game.PlaceId == 11312500614 and game.JobId == "faddd4e5-6bf6-fa57-0b74-dddc6b
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 		wait(1)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(bt)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(fs)
 		wait(1)
 		game:GetService("ReplicatedStorage").Run:FireServer()
 		local ohString3 = "8"
