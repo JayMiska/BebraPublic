@@ -223,7 +223,7 @@ if game.PlaceId == 11312500614 and game.JobId == "faddd4e5-6bf6-fa57-0b74-dddc6b
 		freeze()
 		spawn(autojf)
 		spawn(autows)
-
+		spawn(fstrain())
 	elseif Playero.Name == "TheRichestHuman_Bro" then
 		print("Rich")
 		rsp:FireServer()
