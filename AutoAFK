@@ -148,9 +148,7 @@ function autows()
 end
 function autojf()
 	while _G.main == true do
-		local virtualUser = game:GetService('VirtualUser')
 		virtualUser:CaptureController()
-
 		virtualUser:SetKeyDown('0x20')
 		task.wait(.1)
 		virtualUser:SetKeyUp('0x20')
