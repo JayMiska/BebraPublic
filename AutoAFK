@@ -242,7 +242,7 @@ if game.PlaceId == 11312500614 and game.JobId == "e2e7911f-e67f-6ff2-afc9-86c06b
 		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 		wait(1)
 		poop(5)
-		setfpscap(5)
+		setfpscap(1)
 		
 	elseif Playero.Name == "Miskaur_3" then
 		print("Miska")
