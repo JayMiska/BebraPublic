@@ -173,7 +173,7 @@ if game.PlaceId == 11312500614 and game.JobId == "e2e7911f-e67f-6ff2-afc9-86c06b
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 		wait(1)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(bt)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(pp)
 		wait(1)
 		game:GetService("ReplicatedStorage").Run:FireServer()
 		local ohString1 = "8"
@@ -181,6 +181,7 @@ if game.PlaceId == 11312500614 and game.JobId == "e2e7911f-e67f-6ff2-afc9-86c06b
 		poop(10)
 		wait(2)
 		freeze()
+		spawn(pptrain())
 		spawn(autows)
 		spawn(autojf)
 		
