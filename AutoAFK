@@ -181,9 +181,9 @@ if game.PlaceId == 11312500614 and game.JobId == "e2e7911f-e67f-6ff2-afc9-86c06b
 		poop(10)
 		wait(2)
 		freeze()
-		spawn(pptrain())
 		spawn(autows)
 		spawn(autojf)
+		spawn(pptrain())
 		
 	elseif Playero.Name == "BanNaxyuBlyat" then
 		print("bannaxyuALL")
