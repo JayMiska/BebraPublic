@@ -160,7 +160,7 @@ bt = Vector3.new(1817.6, 57.769649505615234, 798.5)
 pp = Vector3.new(461, 1009, -843)
 lb = Vector3.new(50, 30, -273)
 
-if game.PlaceId == 11312500614 and game.JobId == "4d97c5a5-80ec-80d8-e0a8-c9b86b728538" then
+if game.PlaceId == 11312500614 and game.JobId == "854f5d89-2bfd-711f-3ad3-92786b728538" then
 	local Playero = game.Players.LocalPlayer
 	local rsp = game:GetService("ReplicatedStorage").RespawnEvent	
 	print("AutoAfk in process...")
