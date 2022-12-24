@@ -227,6 +227,7 @@ if game.PlaceId == 11312500614 and game.JobId == "3dfa4b57-d0f0-9749-f949-05186b
 		spawn(autows)
 		spawn(pptrain())
 	elseif Playero.Name == "TheRichestHuman_Bro" then
+		repeat wait() until game.Players.LocalPlayer.PlayerGui.Play
 		print("Rich")
 		rsp:FireServer()
 		wait(8)
