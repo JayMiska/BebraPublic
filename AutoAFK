@@ -168,6 +168,7 @@ if game.PlaceId == 11312500614 and game.JobId == "a732646c-78ed-c8fb-283e-f0896b
 
 	if Playero.Name == "Jayplayp" then
 		print("JayKa")
+		wait(20)
 		rsp:FireServer()
 		repeat wait(1) until Playero.Character
 		wait(1)
