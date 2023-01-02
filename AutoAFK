@@ -185,6 +185,7 @@ if game.PlaceId == 11312500614 and game.JobId == "a732646c-78ed-c8fb-283e-f0896b
 		spawn(autows)
 		spawn(autojf)
 		spawn(pptrain())
+		game:GetService("Workspace").Jayplayp.PowersLocalScript:Destroy()
 		
 	elseif Playero.Name == "BanNaxyuBlyat" then
 		print("bannaxyuALL")
