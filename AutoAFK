@@ -256,7 +256,7 @@ if game.PlaceId == 11312500614 and game.JobId == "958ab7d9-8419-8644-18a3-b5b46b
 		rsp:FireServer()
 		repeat wait(1) until Playero.Character
 		wait(1)
-		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
+		--game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 		wait(1)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(fs)
