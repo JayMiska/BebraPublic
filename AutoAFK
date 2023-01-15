@@ -220,7 +220,7 @@ if game.PlaceId == 11312500614 and game.JobId == "6b74dc24-6cb6-fd15-a68a-f35d6b
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(pp)
 		wait(1)
 		game:GetService("ReplicatedStorage").Run:FireServer()
-		local ohString3 = "11"
+		local ohString3 = "12"
 		game:GetService("ReplicatedStorage").WeightEvent:FireServer(ohString3)
 		poop(30)
 		wait(1)
