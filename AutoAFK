@@ -196,7 +196,7 @@ if game.PlaceId == 11312500614 and game.JobId == "c6ab7944-ce5a-befa-b198-d39db7
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 		wait(1)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(fs)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(pp)
 		wait(1)
 		game:GetService("ReplicatedStorage").Run:FireServer()
 		local ohString2 = "8"
@@ -207,7 +207,7 @@ if game.PlaceId == 11312500614 and game.JobId == "c6ab7944-ce5a-befa-b198-d39db7
 		freeze()
 		spawn(autojf)
 		spawn(autows)
-		spawn(fstrain())
+		spawn(pptrain())
 		
 	elseif Playero.Name == "SPEEDISMYLIFEDUDE" then
 		print("TheFastestHuman")
