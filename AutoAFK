@@ -176,7 +176,7 @@ end
 		wait(20)
 		spawn(rsp)
 		repeat wait(1) until Playero.Character
-		wait(1)
+		wait(5)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 		wait(1)
@@ -198,7 +198,7 @@ end
 		task.wait(10)
 		spawn(rsp)
 		repeat wait(1) until Playero.Character
-		wait(1)
+		wait(5)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 		wait(1)
@@ -220,7 +220,7 @@ end
 		task.wait(10)
 		spawn(rsp)
 		repeat wait(1) until Playero.Character
-		wait(1)
+		wait(5)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 		wait(1)
@@ -251,7 +251,7 @@ end
 		task.wait(10)
 		spawn(rsp)
 		repeat wait(1) until Playero.Character
-		wait(1)
+		wait(5)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(lb)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
 		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
@@ -264,9 +264,9 @@ end
 		task.wait(10)
 		spawn(rsp)
 		repeat wait(1) until Playero.Character
-		wait(1)
-		--game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
-		--game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
+		wait(5)
+		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
+		game.Players.LocalPlayer.PlayerGui.plrstats.Enabled = true
 		wait(1)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(fs)
 		wait(1)
