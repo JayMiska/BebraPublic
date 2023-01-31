@@ -195,6 +195,7 @@ end
 		
 	elseif Playero.Name == "BanNaxyuBlyat" then
 		print("bannaxyuALL")
+		task.wait(10)
 		spawn(rsp)
 		repeat wait(1) until Playero.Character
 		wait(1)
@@ -216,6 +217,7 @@ end
 		
 	elseif Playero.Name == "SPEEDISMYLIFEDUDE" then
 		print("TheFastestHuman")
+		task.wait(10)
 		spawn(rsp)
 		repeat wait(1) until Playero.Character
 		wait(1)
@@ -246,6 +248,7 @@ end
 
 	elseif Playero.Name == "KnightOfMiracle" then
 		print("Knight")
+		task.wait(10)
 		spawn(rsp)
 		repeat wait(1) until Playero.Character
 		wait(1)
@@ -258,6 +261,7 @@ end
 		
 	elseif Playero.Name == "Miskaur_3" then
 		print("Miska")
+		task.wait(10)
 		spawn(rsp)
 		repeat wait(1) until Playero.Character
 		wait(1)
