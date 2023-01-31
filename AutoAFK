@@ -161,15 +161,20 @@ pp = Vector3.new(461, 1009, -843)
 lb = Vector3.new(50, 30, -273)
 
 if game.PlaceId == 11312500614 and game.JobId == "61e8b6c0-7c5a-a517-8140-8f0bb71e8d50" then
+local VIM = game:GetService("VirtualInputManager")
 	local Playero = game.Players.LocalPlayer
-	local rsp = game:GetService("ReplicatedStorage").RespawnEvent	
+	local function rsp()
+for i = 1, 2 do
+VIM:SendMouseButtonEvent(939, 523, false, i == 1, nil, 0)
+end
+end
 	print("AutoAfk in process...")
 	_G.main = true
 
 	if Playero.Name == "Jayplayp" then
 		print("JayKa")
 		wait(20)
-		rsp:FireServer()
+		spawn(rsp)
 		repeat wait(1) until Playero.Character
 		wait(1)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
@@ -190,7 +195,7 @@ if game.PlaceId == 11312500614 and game.JobId == "61e8b6c0-7c5a-a517-8140-8f0bb7
 		
 	elseif Playero.Name == "BanNaxyuBlyat" then
 		print("bannaxyuALL")
-		rsp:FireServer()
+		spawn(rsp)
 		repeat wait(1) until Playero.Character
 		wait(1)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
@@ -211,7 +216,7 @@ if game.PlaceId == 11312500614 and game.JobId == "61e8b6c0-7c5a-a517-8140-8f0bb7
 		
 	elseif Playero.Name == "SPEEDISMYLIFEDUDE" then
 		print("TheFastestHuman")
-		rsp:FireServer()
+		spawn(rsp)
 		repeat wait(1) until Playero.Character
 		wait(1)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
@@ -230,7 +235,7 @@ if game.PlaceId == 11312500614 and game.JobId == "61e8b6c0-7c5a-a517-8140-8f0bb7
 		spawn(pptrain())
 	elseif Playero.Name == "TheRichestHuman_Bro" then
 		print("Rich")
-		rsp:FireServer()
+		spawn(rsp)
 		wait(8)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(lb)
 		game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
@@ -241,7 +246,7 @@ if game.PlaceId == 11312500614 and game.JobId == "61e8b6c0-7c5a-a517-8140-8f0bb7
 
 	elseif Playero.Name == "KnightOfMiracle" then
 		print("Knight")
-		rsp:FireServer()
+		spawn(rsp)
 		repeat wait(1) until Playero.Character
 		wait(1)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(lb)
@@ -253,7 +258,7 @@ if game.PlaceId == 11312500614 and game.JobId == "61e8b6c0-7c5a-a517-8140-8f0bb7
 		
 	elseif Playero.Name == "Miskaur_3" then
 		print("Miska")
-		rsp:FireServer()
+		spawn(rsp)
 		repeat wait(1) until Playero.Character
 		wait(1)
 		--game.Players.LocalPlayer.PlayerGui.Play.Enabled = false
